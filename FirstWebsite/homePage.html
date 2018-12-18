@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>网站助手</title>
+
+
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet"  href="mycss/sibianxing.css">
+
+    <!-- 最新的 Highcharts JavaScript 文件 -->
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/highcharts-3d.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/themes/dark-unica.js"></script>
+
+
+
+    <link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/heatmap.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+
+    <!-- 最新的 Highcharts JavaScript 气泡图文件 -->
+    <script src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/highcharts-more.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+    <script src="https://img.hcharts.cn/highcharts/themes/dark-unica.js"></script>
+
+
+
+    <!--网页风格-->
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: #1b1e21;
+            height: 700px;
+            width:1550px;
+            font-family: "Droid Sans",monospace;
+        }
+        div.row{
+            margin-right: 0;
+        }
+        div.num{
+            padding: 0;
+            margin: 0;
+            color: #ececf6;
+            alignment: top;
+            font-size: 60%;
+        }
+        .progress{
+            padding: 0;
+            margin: 0;
+            background-color: #5a6268;
+            border-radius: 10px;
+            border-color: #1c7430;
+        }
+        .progress-bar{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #ececf6;
+            font-size: 12px;
+        }
+        #row2{
+            overflow: hidden;
+        }
+        [class*="col-"]{
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!--这是顶端左边部分状态栏目-->
+<!--bootstrap进度条样式-->
+<div class="container-fluid" style="padding: 0;">
+<div class="row" id="row1">
+    <div class="col-md-2"  id="progress">
+        <div class="num" id="1">
+        <span style="padding-top:20px; font-size: 15px;alignment: top;text-align: start;">
+            XX
+        </span>
+        </div>
+        <div class="progress" style="height: 40%;">
+            <div class="progress-bar" style="width:70%;color: #1b1e21">
+                <span style="font-size: 50%">70%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2"  id="progress2">
+        <div class="num" id="2">
+            <span style="font-size: 15px;alignment: top;text-align: start">
+            XX
+            </span>
+        </div>
+        <div class="progress" style="height: 40%;">
+            <div class="progress-bar" style="width:70%;color: #1b1e21">
+                <span style="font-size: 50%">70%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2"  id="progress3">
+        <div class="num" id="3">
+        <span style="font-size: 15px;alignment: top;text-align: start">
+            XX
+            </span>
+        </div>
+        <div class="progress" style="height: 40%;">
+            <div class="progress-bar" style="width:70%;color: #1b1e21">
+                <span style="font-size: 50%">70%</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2"  id="progress4">
+        <div class="num" id="4">
+            <span style="font-size: 15px;alignment: top;text-align: start">
+            XX
+            </span>
+        </div>
+        <div class="progress" style="height: 40%;">
+            <div class="progress-bar" style="width:70%;color: #1b1e21">
+                <span style="font-size: 50%">70%</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!--这是顶端右边部分功能按钮,使用的是四边形状-->
+    <div class="col-md-4" style="padding: 0;">
+        <div class="div-header">
+            <div class="menu">
+                <a class="meun-item" href="#" target="_blank">shuttdown</a>
+                <a class="meun-item" href="#" target="_blank">logout</a>
+                <a class="meun-item" href="#" target="_blank">openfile</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!--这是页面第二列内容-->
+
+<div class="container-fluid">
+    <div class="row" id="row2">
+        <div class="col-lg-3">
+            <span style="color: #ececf6">图形</span>
+            <!-- 图表容器 DOM -->
+            <div id="container" style="width: 300px; height: 300px; background-color: #1b1e21"></div>
+            <script>
+                // 图表配置
+                Highcharts.getOptions().colors = $.map(Highcharts.getOptions().colors, function (color) {
+                    return {
+                        radialGradient: {
+                            cx: 0.4,
+                            cy: 0.3,
+                            r: 0.5
+                        },
+                        stops: [
+                            [0, color],
+                            [1, Highcharts.Color(color).brighten(-0.2).get('rgb')]
+                        ]
+                    };
+                });
+                // Set up the chart
+                var chart = new Highcharts.Chart({
+                    chart: {
+                        renderTo: 'container',
+                        margin: [0, 0, 0, 0] ,
+                        height: 300,
+                        width: 300,
+                        type: 'scatter',
+                        color: 'rgba(255, 255, 255, 1)',
+                        backgroundColor: 'rgba(0,0,0,0)',
+                        options3d: {
+                            enabled: true,
+                            alpha: 10,
+                            beta: 30,
+                            depth: 250,
+                            viewDistance: 5,
+                            frame: {
+                                bottom: { size: 1, color: 'rgba(0,0,0,0.02)' },
+                                back: { size: 1, color: 'rgba(0,0,0,0.04)' },
+                                side: { size: 1, color: 'rgba(0,0,0,0.06)' }
+                            }
+                        }
+                    },
+                    title: {
+                        text: null
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    plotOptions: {
+                        scatter: {
+                            width: 200,
+                            height: 200,
+                            depth: 200,
+                        }
+                    },
+                    yAxis: {
+                        min: 0,
+                        max: 10,
+                        title: null
+                    },
+                    xAxis: {
+                        min: 0,
+                        max: 10,
+                        gridLineWidth: 1
+                    },
+                    zAxis: {
+                        min: 0,
+                        max: 10
+                    },
+                    legend: {
+                        enabled: false
+                    },
+                    series: [{
+                        name: '随机数据',
+                        colorByPoint: true,
+                        data: [[1, 6, 5], [8, 7, 9], [1, 3, 4], [4, 6, 8], [5, 7, 7], [6, 9, 6], [7, 0, 5], [2, 3, 3], [3, 9, 8], [3, 6, 5], [4, 9, 4], [2, 3, 3], [6, 9, 9], [0, 7, 0], [7, 7, 9], [7, 2, 9], [0, 6, 2], [4, 6, 7], [3, 7, 7], [0, 1, 7], [2, 8, 6], [2, 3, 7], [6, 4, 8], [3, 5, 9], [7, 9, 5], [3, 1, 7], [4, 4, 2], [3, 6, 2], [3, 1, 6], [6, 8, 5], [6, 6, 7], [4, 1, 1], [7, 2, 7], [7, 7, 0], [8, 8, 9], [9, 4, 1], [8, 3, 4], [9, 8, 9], [3, 5, 3], [0, 2, 4], [6, 0, 2], [2, 1, 3], [5, 8, 9], [2, 1, 1], [9, 7, 6], [3, 0, 2], [9, 9, 0], [3, 4, 8], [2, 6, 1], [8, 9, 2], [7, 6, 5], [6, 3, 1], [9, 3, 1], [8, 9, 3], [9, 1, 0], [3, 8, 7], [8, 0, 0], [4, 9, 7], [8, 6, 2], [4, 3, 0], [2, 3, 5], [9, 1, 4], [1, 1, 4], [6, 0, 2], [6, 1, 6], [3, 8, 8], [8, 8, 7], [5, 5, 0], [3, 9, 6], [5, 4, 3], [6, 8, 3], [0, 1, 5], [6, 7, 3], [8, 3, 2], [3, 8, 3], [2, 1, 6], [4, 6, 7], [8, 9, 9], [5, 4, 2], [6, 1, 3], [6, 9, 5], [4, 8, 2], [9, 7, 4], [5, 4, 2], [9, 6, 1], [2, 7, 3], [4, 5, 4], [6, 8, 1], [3, 4, 0], [2, 2, 6], [5, 1, 2], [9, 9, 7], [6, 9, 9], [8, 4, 3], [4, 1, 7], [6, 2, 5], [0, 4, 9], [3, 5, 9], [6, 9, 1], [1, 9, 2]]
+                    }],
+                    credits: {
+                        enabled: false, // 默认值，如果想去掉版权信息，设置为false即可
+                    },
+                    exporting: {
+                        enabled:false
+                    },
+                });
+                // Add mouse events for rotation
+                $(chart.container).bind('mousedown.hc touchstart.hc', function (e) {
+                    e = chart.pointer.normalize(e);
+                    var posX = e.pageX,
+                        posY = e.pageY,
+                        alpha = chart.options.chart.options3d.alpha,
+                        beta = chart.options.chart.options3d.beta,
+                        newAlpha,
+                        newBeta,
+                        sensitivity = 5; // lower is more sensitive
+                    $(document).bind({
+                        'mousemove.hc touchdrag.hc': function (e) {
+                            // Run beta
+                            newBeta = beta + (posX - e.pageX) / sensitivity;
+                            newBeta = Math.min(100, Math.max(-100, newBeta));
+                            chart.options.chart.options3d.beta = newBeta;
+                            // Run alpha
+                            newAlpha = alpha + (e.pageY - posY) / sensitivity;
+                            newAlpha = Math.min(100, Math.max(-100, newAlpha));
+                            chart.options.chart.options3d.alpha = newAlpha;
+                            chart.redraw(false);
+                        },
+                        'mouseup touchend': function () {
+                            $(document).unbind('.hc');
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="col-lg-6">
+
+            <span style="color: #ececf6">主要界面</span>
+            <div id="container1" style="min-width:400px;height:400px"></div>
+            <script>
+                var chart = Highcharts.chart('container1', {
+                    chart: {
+                        type: 'bubble',
+                        zoomType: 'xy',
+                        backgroundColor: 'rgba(0,0,0,0)',
+                        margin: [0, 0, 0, 0],
+                    },
+                    title: {
+                        text: null
+                    },
+                    series: [{
+                        name:'数据列 1',
+                        // 每个气泡包含三个值，x，y，z；其中 x，y用于定位，z 用于计算气泡大小
+                        data: [[97, 36, 79], [94, 74, 60], [68, 76, 58], [64, 87, 56], [68, 27, 73], [74, 99, 42], [7, 93, 87], [51, 69, 40], [38, 23, 33], [57, 86, 31]]
+                    }, {
+                        name:'数据列 2',
+                        data: [[25, 10, 87], [2, 75, 59], [11, 54, 8], [86, 55, 93], [5, 3, 58], [90, 63, 44], [91, 33, 17], [97, 3, 56], [15, 67, 48], [54, 25, 81]]
+                    }, {
+                        name:'数据列 3',
+                        data: [[47, 47, 21], [20, 12, 4], [6, 76, 91], [38, 30, 60], [57, 98, 64], [61, 17, 80], [83, 60, 13], [67, 78, 75], [64, 12, 10], [30, 77, 82]]
+                    }],
+                    credits: {
+                        enabled: false, // 默认值，如果想去掉版权信息，设置为false即可
+                    },
+                    exporting: {
+                        enabled:false
+                    },
+                });
+            </script>
+        </div>
+        <div class="col-lg-3">
+            <span style="color: #ececf6">图形信息</span>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
