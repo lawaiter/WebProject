@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{dark-unica, exporting, heatmap, highcharts, highcharts-3d, highcharts-more, highcharts-zh_CN}" />
+    <file url="PROJECT" libraries="{dark-unica, exporting, graphics, heatmap, highcharts, highcharts-3d, highcharts-more, highcharts-zh_CN, map}" />
   </component>
 </project>

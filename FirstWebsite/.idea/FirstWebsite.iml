@@ -15,5 +15,7 @@
     <orderEntry type="library" name="highcharts-3d" level="application" />
     <orderEntry type="library" name="heatmap" level="application" />
     <orderEntry type="library" name="highcharts-more" level="application" />
+    <orderEntry type="library" name="graphics" level="application" />
+    <orderEntry type="library" name="map" level="application" />
   </component>
 </module>

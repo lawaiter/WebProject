@@ -1,4 +1,4 @@
-<svg width="1565" height="50" xmlns="http://www.w3.org/2000/svg" id="topsvg">
-    <polygon points="0,50 0,30 70,0 1560,0 1560,10 750,10 650,20 450,20 350,50"
+<svg  xmlns="http://www.w3.org/2000/svg" id="topsvg" style="margin: 0;padding: 0;height: 60px; width: 1565;">
+    <polygon points="0,60 0,30 70,0 1560,0 1560,10 750,10 650,20 450,20 350,60"
              style="margin: 0;padding: 0;fill: #ececf6;stroke: #ececf6;fill-rule: nonzero;" />
 </svg>
